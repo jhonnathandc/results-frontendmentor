@@ -1,20 +1,20 @@
 .card {
   display: flex;
-  border-radius: 32px;
+  border-radius: 3.2rem;
   background-color: $white;
   width: 100%;
-  max-width: 736px;
-  box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+  max-width: 73.6rem;
+  box-shadow: 0 3rem 6rem rgba(61, 108, 236, 0.15);
 
   @include responsive(s) {
-    border-radius: 32px 32px 0px 0px;
+    border-radius: 3.2rem 3.2rem 0 0;
     flex-direction: column;
     box-shadow: none;
   }
 
   @include responsive(xs) {
     height: 100%;
-    border-radius: 32px 32px 0px 0px;
+    border-radius: 3.2rem 3.2rem 0 0;
     flex-direction: column;
     box-shadow: none;
   }
@@ -27,38 +27,38 @@
     justify-content: center;
 
     background-image: $gradient-blue;
-    padding: 38px 54px 46px 54px;
-    border-radius: 32px;
-    max-width: 368px;
+    padding: 3.8rem 5.4rem 4.6rem 5.4rem;
+    border-radius: 3.2rem;
+    max-width: 36.8rem;
 
     @include responsive(s) {
-      border-radius: 0px 0px 32px 32px;
+      border-radius: 0 0 3.2rem 3.2rem;
       max-width: 100%;
     }
 
     @include responsive(xs) {
-      padding: 24px 54px 40px 54px;
-      border-radius: 0px 0px 32px 32px;
+      padding: 2.4rem 5.4rem 4rem 5.4rem;
+      border-radius: 0 0 3.2rem 3.2rem;
       max-width: 100%;
     }
 
     h1 {
       @include type-1(2.4rem, 700);
       color: $light;
-      margin-bottom: 35px;
+      margin-bottom: 3.5rem;
 
       @include responsive(xs) {
         @include type-1(1.8rem, 700);
-        margin-bottom: 24px;
+        margin-bottom: 2.4rem;
       }
     }
 
     .circle {
       background-image: $gradient-circle;
-      width: 200px;
-      height: 200px;
+      width: 20rem;
+      height: 20rem;
       border-radius: 50%;
-      margin-bottom: 28px;
+      margin-bottom: 2.8rem;
 
       display: flex;
       flex-direction: column;
@@ -66,16 +66,16 @@
       justify-content: center;
 
       @include responsive(xs) {
-        margin-bottom: 24px;
-        width: 140px;
-        height: 140px;
+        margin-bottom: 2.4rem;
+        width: 14rem;
+        height: 14rem;
       }
 
       .number-result {
         @include type-1(7.2rem, 800);
         line-height: 7.2rem;
         color: $white;
-        margin-bottom: 4px;
+        margin-bottom: .4rem;
 
         @include responsive(xs) {
           @include type-1(5.6rem, 800);
@@ -96,11 +96,11 @@
     h2 {
       @include type-1(3.2rem, 700);
       color: $white;
-      margin-bottom: 14px;
+      margin-bottom: 1.4rem;
 
       @include responsive(xs) {
         @include type-1(2.4rem, 700);
-        margin-bottom: 8px;
+        margin-bottom: .8rem;
       }
     }
 
@@ -117,20 +117,20 @@
 
   .summary {
     flex: 1;
-    padding: 38px 40px 46px 40px;
+    padding: 3.8rem 4.0rem 4.6rem 4.0rem;
 
     @include responsive(xs) {
-      padding: 24px 30px 30px 30px;
+      padding: 2.4rem 3rem 3rem 3rem;
     }
 
     h1 {
       @include type-1(2.4rem, 700);
       color: $dark-navy;
-      margin-bottom: 28px;
+      margin-bottom: 2.8rem;
 
       @include responsive(xs) {
         @include type-1(1.8rem, 700);
-        margin-bottom: 24 px;
+        margin-bottom: 2.4rem;
       }
     }
 
@@ -138,14 +138,14 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 16px;
-      border-radius: 12px;
-      margin-bottom: 16px;
+      padding: 1.6rem;
+      border-radius: 1.2rem;
+      margin-bottom: 1.6rem;
 
       div {
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 1.2rem;
 
         p {
           @include type-1(1.8rem, 500);
@@ -202,7 +202,7 @@
       }
     }
     .btn {
-      margin-top: 25px;
+      margin-top: 2.5rem;
     }
   }
 }
